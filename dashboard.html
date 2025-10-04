@@ -9,10 +9,26 @@
 <body>
     <div class="dashboard-container">
         <header class="dashboard-header">
-            <h1>Dashboard</h1>
+            <div class="header-left"></div>
+                <h1><i class="fas fa-tachometer-alt"></i> Dashboard</h1>
+            </div>
             <div class="user-info">
-                <span id="welcomeMessage">Welcome, User!</span>
-                <button id="logoutBtn" class="btn-secondary">Logout</button>
+                <div class="user-profile"></div>
+                    <img src="default-avatar.png" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span id="welcomeMessage">Welcome, User!</span>
+                        <small class="user-role">Admin</small>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <button class="btn-notification">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-badge">3</span>
+                    </button>
+                    <button id="logoutBtn" class="btn-secondary">
+                        <i class="fas fa-sign-out-alt"></i> Logout
+                    </button>
+                </div>
             </div>
         </header>
         
