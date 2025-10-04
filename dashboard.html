@@ -9,10 +9,26 @@
 <body>
     <div class="dashboard-container">
         <header class="dashboard-header">
-            <h1>Dashboard</h1>
+            <div class="header-left"></div>
+                <h1><i class="fas fa-tachometer-alt"></i> Dashboard</h1>
+            </div>
             <div class="user-info">
-                <span id="welcomeMessage">Welcome, User!</span>
-                <button id="logoutBtn" class="btn-secondary">Logout</button>
+                <div class="user-profile"></div>
+                    <img src="default-avatar.png" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span id="welcomeMessage">Welcome, User!</span>
+                        <small class="user-role">Admin</small>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <button class="btn-notification">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-badge">3</span>
+                    </button>
+                    <button id="logoutBtn" class="btn-secondary">
+                        <i class="fas fa-sign-out-alt"></i> Logout
+                    </button>
+                </div>
             </div>
         </header>
         
@@ -25,11 +41,24 @@
                     <p><strong>Last Login:</strong> <span id="lastLogin">-</span></p>
                 </div>
                 
-                <div class="card">
-                    <h3>Quick Stats</h3>
-                    <p><strong>Login Count:</strong> <span id="loginCount">1</span></p>
-                    <p><strong>Account Created:</strong> <span id="accountCreated">Today</span></p>
-                    <p><strong>Status:</strong> <span class="status-active">Active</span></p>
+                <div class="card stats-card"></div>
+                    <h3><i class="fas fa-chart-line"></i> Quick Stats</h3>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-label">Login Count</span>
+                            <span class="stat-value" id="loginCount">1</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Account Created</span>
+                            <span class="stat-value" id="accountCreated">Today</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Status</span>
+                            <span class="stat-value status-badge status-active">
+                                <i class="fas fa-circle"></i> Active
+                            </span>
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="card">
