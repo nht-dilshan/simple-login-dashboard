@@ -89,6 +89,7 @@ body {
     cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     will-change: transform;
+    margin-top: var(--spacing-lg);
 }
 
 .btn-primary:focus {
@@ -133,4 +134,22 @@ body {
     animation: fadeInUp 0.6s ease forwards;
     transform: translateZ(0);
     backface-visibility: hidden;
+}
+.forgot-password {
+    color: #667eea;
+}
+.forgot-password:hover {
+    color: #764ba2;
+}
+.signup-link {
+    color: #667eea;
+}
+.signup-link:hover {
+    color: #764ba2;
+}
+a {
+   color: #667eea
+}
+a:hover {
+    color: #764ba2
 }

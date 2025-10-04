@@ -1,3 +1,16 @@
+function togglePassword() {
+    const passwordInput = document.getElementById('password');
+    const passwordIcon = document.querySelector('.password-icon');
+
+    if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+        passwordIcon.textContent = '🙈'; // change icon when visible
+    } else {
+        passwordInput.type = 'password';
+        passwordIcon.textContent = '👁️'; // revert icon when hidden
+    }
+}
+
 // Add at the top
 async function hashPassword(password) {
     const encoder = new TextEncoder();
