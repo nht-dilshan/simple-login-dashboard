@@ -41,11 +41,24 @@
                     <p><strong>Last Login:</strong> <span id="lastLogin">-</span></p>
                 </div>
                 
-                <div class="card">
-                    <h3>Quick Stats</h3>
-                    <p><strong>Login Count:</strong> <span id="loginCount">1</span></p>
-                    <p><strong>Account Created:</strong> <span id="accountCreated">Today</span></p>
-                    <p><strong>Status:</strong> <span class="status-active">Active</span></p>
+                <div class="card stats-card"></div>
+                    <h3><i class="fas fa-chart-line"></i> Quick Stats</h3>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-label">Login Count</span>
+                            <span class="stat-value" id="loginCount">1</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Account Created</span>
+                            <span class="stat-value" id="accountCreated">Today</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Status</span>
+                            <span class="stat-value status-badge status-active">
+                                <i class="fas fa-circle"></i> Active
+                            </span>
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="card">
