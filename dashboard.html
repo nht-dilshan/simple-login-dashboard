@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Dashboard App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <h1>Dashboard</h1>
+            <div class="user-info">
+                <span id="welcomeMessage">Welcome, User!</span>
+                <button id="logoutBtn" class="btn-secondary">Logout</button>
+            </div>
+        </header>
+        
+        <main class="dashboard-main">
+            <div class="dashboard-cards">
+                <div class="card">
+                    <h3>Profile Information</h3>
+                    <p><strong>Username:</strong> <span id="userDisplayName">-</span></p>
+                    <p><strong>Email:</strong> <span id="userDisplayEmail">-</span></p>
+                    <p><strong>Last Login:</strong> <span id="lastLogin">-</span></p>
+                </div>
+                
+                <div class="card">
+                    <h3>Quick Stats</h3>
+                    <p><strong>Login Count:</strong> <span id="loginCount">1</span></p>
+                    <p><strong>Account Created:</strong> <span id="accountCreated">Today</span></p>
+                    <p><strong>Status:</strong> <span class="status-active">Active</span></p>
+                </div>
+                
+                <div class="card">
+                    <h3>Quick Actions</h3>
+                    <button class="btn-primary" onclick="showAlert('Profile updated!')">Update Profile</button>
+                    <button class="btn-primary" onclick="showAlert('Settings saved!')">Settings</button>
+                    <button class="btn-primary" onclick="showAlert('Help documentation opened!')">Help</button>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="dashboard-footer">
+            <p>&copy; 2025 Dashboard App. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
